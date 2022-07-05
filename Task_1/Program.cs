@@ -20,22 +20,14 @@ namespace HelloWorld
         public static void Exponentiation(int x, int y)
         {
             int c = x;
-            if (y > 0)
+            for (int i = 1; i < y; i++)
             {
-                for (int i = 1; i < y; i++)
-                {
-                    c = c * x;
-                }
-                Console.WriteLine();
-                Console.WriteLine($"Result: {x}, {y} -> {c}"); 
+                c = c * x;
             }
+            Console.WriteLine();
+            Console.WriteLine($"Result: {x}, {y} -> {c}"); 
 
-            if (y == 0)
-            {
-                int d = 1;
-                Console.WriteLine();
-                Console.WriteLine($"Result: {x}, {y} -> {d}"); 
-            } 
+
         }
         
     }
